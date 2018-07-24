@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+   "name": "Nursing Extension",
+    "description": "This extension checkes if you passed and notifies you",
+    "version": "1.0",
+    "content_scripts": [
+        {
+        "matches": ["https://wsr.pearsonvue.com/testtaker/checkout/OrderConfirmPage/NCLEXTESTING/*"],
+        "js": ["script.js"],
+        "run_at" : "document_start"
+        }],
+
+   "page_action": {
+    "default_icon": "img.png",
+    
+    "default_title": "Check if you passed"
+   }
+}
+   
